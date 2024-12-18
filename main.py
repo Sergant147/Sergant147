@@ -1,6 +1,6 @@
 history = {}
 products = []
-lastId = 0
+last_шв = 0
 
 def show_products(products):
     for i in products:
@@ -16,9 +16,9 @@ def remove_product(products, product):
 
 
 def generate_id():
-    global lastId
-    lastId += 1
-    return lastId
+    global last_id
+    last_id += 1
+    return last_id
 
 
 def make_order(products):
