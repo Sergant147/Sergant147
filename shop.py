@@ -68,8 +68,9 @@ def run():
         print('4. Сформировать заказ из текущей корзины')
         print('5. Просмотреть историю заказов')
         print('6. Просмотреть конкретный заказ из истории')
+        print('7. Кончить шоппинг')
         try:
-            choice = int(input('Выберите пункт меню (1-8): '))
+            choice = int(input('Выберите пункт меню (1-7): '))
 
             if choice == 1:
                 show_products(products)
@@ -92,6 +93,9 @@ def run():
             elif choice == 6:
                 order_id = input('ID заказа: ')
                 show_order(order_id)
+
+            elif choice == 7:
+                break
 
             else:
                 print('Некорректный выбор. Попробуйте снова.')
