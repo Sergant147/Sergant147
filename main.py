@@ -23,13 +23,7 @@ def generate_id():
 
 def make_order(products):
     order_id = generate_id()
-    text = ''
-    for idx, prod in enumerate(products):
-        if idx != len(products) - 1:
-            text += f'{prod}\n'
-        else:
-            text += f'{prod}'
-    history[order_id] = text
+    history[order_id] = set(products)
 
 
 def get_orders_ids():
@@ -37,9 +31,7 @@ def get_orders_ids():
 
 
 def read_order(order_id):
-    products = []
-    for product in history[order_id].split('\n'):
-        products.append(product)
+    products = history[order_id]
     return products
 
 
