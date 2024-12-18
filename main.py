@@ -1,6 +1,6 @@
 history = {}
 products = []
-last_шв = 0
+last_id = 0
 
 def show_products(products):
     for i in products:
