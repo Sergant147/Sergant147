@@ -1,4 +1,5 @@
 history = {}
+products = []
 
 def show_products(products):
     for i in products:
@@ -64,7 +65,6 @@ def print_menu():
     print('6. Просмотреть конкретный заказ из истории')
     print('7. Кончить шоппинг')
 
-products = []
 def run():
     global products
     while True:
