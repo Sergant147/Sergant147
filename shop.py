@@ -58,9 +58,9 @@ def show_order(order_id):
     for item_idx, item in enumerate(read_order(order_id)):
         print(f'Item {item_idx + 1}: {item}')
 
-
+products = []
 def run():
-    products = []
+    global products
     while True:
         print('1. Показать список продуктов')
         print('2. Добавить продукт в корзину')
